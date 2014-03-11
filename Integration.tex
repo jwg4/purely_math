@@ -1,0 +1,23 @@
+\documentclass{book}
+
+\usepackage{amsfonts,amssymb,amsmath}
+\usepackage{makeidx}
+\usepackage[toc]{glossaries}
+
+\makeglossaries
+
+\newcommand{\newmention}[1]{\gls{#1}\index{#1@\emph{#1}}}
+
+\newcommand{\R}{\mathbb{R}}
+
+\title{Purely Math \\ Integration}
+\author{Jack Grahl}
+
+\begin{document}
+\maketitle
+
+\input{inverse-differentiation}
+
+\printindex
+\end{document}
+

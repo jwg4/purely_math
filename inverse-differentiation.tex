@@ -1,0 +1,40 @@
+\chapter{The inverse of differentiation}
+Differentiation is the process of taking a function (which must be of a certain type) and obtaining another function, which is called the \emph{derived function} or usually, the \emph{derivative} of the first function. We justify this in several ways:
+\begin{itemize}
+\item The derivative of a function shows us how the value of that function changes as the input to the function changes. 
+\item A very important case of the previous item is when we are looking at a function of time and the derivative indicates a rate of change.
+\item Derivatives allow us to find local minima and maxima of a function (by looking for the points where the derivative is zero.)
+\item We can use derivatives to estimate values of a function close to a point where we know the value of the function and of the derivative, as in Taylor expansions.
+\end{itemize}
+
+For a function to have a derivative, we first of all need both its domain and its co-domain to be $\R$ or subsets of $\R$. (Functions with other domains or co-domains can have derivatives, which mean something slightly different, but we will never look at any of these.) Secondly the function has to be continuous. Functions which are continuous at some points but not others can only have a derivative at those points where they are continuous. But these two conditions are not enough -- the function must also be `differentiable'. For reasonably straightforward functions of the type we are going to consider, to be differentiable at a certain point  means roughly that the function does not have `a corner' at that point.
+
+\newglossaryentry{operator}
+{
+	name=operator,
+	description={is a mapping that takes a function as input and returns another function as output.}
+}
+We can see differentiation as a special type of function -- one which takes a function as input and returns another, related function as output. We will call a function like this, which acts on functions themselves, rather than on points or numbers, an \newmention{operator}. Differentiation is an operator which sends a function to its derivative. 
+
+Suppose we are given the derivative of a function. How can we find the original function? The first important point is that several different functions have the same derivative. This is because the derivative of any constant is zero, and therefore adding any constant to a function does not change its derivative. 
+\[ \frac{d}{dx}(f + c) = \frac{d}{dx}f + \frac{d}{dx}c = f' + 0 = \frac{d}{dx}f \] 
+
+Suppose that we don't mind that we might be out by a constant. To invert differentiation, we have to answer some more questions.
+\begin{enumerate}
+\item Is it possible for two functions, which do not differ by a constant, to have the same derivative?
+\item How do we know whether a function is the derivative of something or not?
+\item How can we work out what that thing is, if it exists?
+\end{enumerate}
+
+We will answer these questions in the same way we learnt about derivatives. We will use a quite technical theory involving geometry and limits to reason about functions and their rates of change. But once we have justified what we are doing, we will make calculations using symbolic methods which look much more like algebra than geometry, and don't explicitly involve limits.
+
+\section{Properties of the antiderivative}
+Suppose that we can take a function\footnote{In the following the term `function' always refers to a function from $\R$ to $\R$.} $f$ and by some method work out another function $F$, the \newmention{antiderivative} of $f$ which has the property that
+\[ \frac{dF}{dx} = f \]
+Here the equality means that the left and right hand side are equal at every point.
+\[ \frac{dF}{dx} |_{x=k} = f(k) \]
+
+If $f(x) = 0$ for all $x$, then $F$ might be any constant function. 
+\[ \frac{d}{dx}c |_{x=k} = 0 = f(k) \]
+
+
