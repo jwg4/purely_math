@@ -8,8 +8,11 @@ Suppose we are given the derivative of a function. How can we find the original 
 
 This means that differentiation, a `mapping` which sends functions to other functions, is not an injection. We can find two functions, or even infinitely many functions, which all get mapped to the same function. This is a problem for finding an inverse. For a mapping to have an inverse, we need it to be both injective and surjective. 
 
-We can take a sort of inverse of a non-injective function. If $f$ is a function which isn't injective, rather than define $f^{1-}(y)$ to be the single value $x$ such that $f(x) = y$, we say that $f^{-1}(y)$ is the set $\{ x : f(x) = y \}$.  
-Suppose that we don't mind that we might be out by a constant. To invert differentiation, we have to answer some more questions.
+We can take a sort of inverse of a non-injective function. If $f$ is a function which isn't injective, rather than define $f^{1-}(y)$ to be the single value $x$ such that $f(x) = y$, we say that $f^{-1}(y)$ is the set $\{ x : f(x) = y \}$.  In the case of the antiderivative, or the inverse of the derivative mapping, each of its values will be a set of functions, where any two functions differ by a constant.
+
+We could choose some arbitrary member of that set, and call it `the' antiderivative. For example, there will always be exactly one member of the set which is equal to 0 at 0. However, in some cases this will not be the particular choice of antiderivative function which we think is natural, and sometimes there might be two or more which are natural for different reasons.  
+
+For this sort-of-inversion of differentiation to work, we have to answer some more questions.
 \begin{enumerate}
 \item Is it possible for two functions, which do not differ by a constant, to have the same derivative?
 \item How do we know whether a function is the derivative of something or not?
@@ -18,6 +21,22 @@ Suppose that we don't mind that we might be out by a constant. To invert differe
 
 \subsection{Example}
 We know that the derivative of $f(x) = x^2$ is $2x$. We also know that the derivative of $f(x) = x^2 + c$ is also $2x$, if $c$ is any real number. 
+
+\section{Notes on the next part}
+\begin{itemize}
+\item Explain what the purpose of differentiation is
+\item Point out that sometimes we care about the whole derivative function and sometimes we only want its value at certain points
+\item Establish a link between these two roles for the derivative and the two ways of finding one -- geometric, algebraic.
+\item See why the antiderivative at a single point does not mean much
+\item The antiderivative function is useful sometimes, as is the difference between two values of the antiderivative.
+\item Look at why the difference between two values is meaningful
+\item By considering the derivative, try and find an interpretation for the difference between two values of the antiderivative.
+\item Show the notation and the terminology involved for indefinite and definite integrals
+\item Try and give some motivations for the antiderivative
+\item Compare which motivations of the derivative have some crossover meaning and which don't.
+\end{itemize}
+
+\section{Things not in the right place yet}
 
  We justify this in several ways:
 \begin{itemize}
